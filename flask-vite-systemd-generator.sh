@@ -730,10 +730,10 @@ Environment="FLASK_ENV=production"
 Environment="FLASK_PORT=${FLASK_PORT}"
 ExecStart=${INSTALL_DIR}/.venv/bin/python app.py
 Restart=always
-RestartSec=3
-Nice=10
-CPUQuota=50%
-MemoryLimit=256M
+; RestartSec=3
+; Nice=10
+; CPUQuota=50%
+; MemoryLimit=256M
 
 [Install]
 WantedBy=multi-user.target
