@@ -143,14 +143,25 @@ This project aims to simplify the process of setting up a Flask-React applicatio
 
 1. **Download the Generator**
    ```bash
-   curl -O https://raw.githubusercontent.com/yourusername/flask-react-systemd/main/generator.sh
-   chmod +x generator.sh
-   ```
+   curl -O https://raw.githubusercontent.com/Wartem/systemd_auto_flask_vite/main/flask-vite-systemd-generator.sh
+   chmod +x flask-vite-systemd-generator.sh
 
 2. **Run the Generator**
    ```bash
-   ./generator.sh
+   ./flask-vite-systemd-generator.sh
    ```
+
+Or alternatively:
+
+```markdown
+### Installation
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/Wartem/systemd_auto_flask_vite.git
+   cd systemd_auto_flask_vite
+   ./flask-vite-systemd-generator.sh
+```
 
 3. **Configure Project**
    - Enter your project name when prompted
@@ -255,8 +266,6 @@ The Vite development server is configured to proxy API requests:
 - WebSocket support enabled
 - CORS handled automatically
 
-[Previous sections remain the same...]
-
 ## Production Deployment
 
 ### Service Installation
@@ -298,10 +307,10 @@ WorkingDirectory=/path/to/your/project
 Environment="FLASK_ENV=production"
 ExecStart=/path/to/venv/bin/python app.py
 Restart=always
-RestartSec=3
-Nice=10
-CPUQuota=50%
-MemoryLimit=256M
+; RestartSec=3
+; Nice=10
+; CPUQuota=50%
+; MemoryLimit=256M
 
 [Install]
 WantedBy=multi-user.target
@@ -309,11 +318,12 @@ WantedBy=multi-user.target
 
 ### Resource Management
 
-The service includes built-in resource limits:
+- Automatic restart on failure
+
+Remove the commented out lines to add resource limits:
 - CPU usage capped at 50%
 - Memory limited to 256MB
 - Process priority set to nice 10
-- Automatic restart on failure
 - 3-second cooldown between restarts
 
 ### Service Management
@@ -386,7 +396,6 @@ Before updates or maintenance:
    ./service_manager.sh
    # Select option 4: Restart service
    ```
-[Previous sections remain the same...]
 
 ## Script Reference & Configuration
 
@@ -538,8 +547,6 @@ Extend `service_manager.sh` by:
 3. Adjusting resource limits
 4. Changing logging behavior
 5. Adding custom maintenance tasks
-
-[Previous sections remain the same...]
 
 ## Troubleshooting & FAQ
 
@@ -733,5 +740,5 @@ If these troubleshooting steps don't resolve your issue:
 3. Try a clean installation:
    ```bash
    rm -rf your_project
-   ./generator.sh
+   ./flask-vite-systemd-generator.sh
    ```
