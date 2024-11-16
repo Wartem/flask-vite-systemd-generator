@@ -456,10 +456,6 @@ Environment configuration file:
 # Required Settings
 FLASK_PORT=5000          # Backend server port
 PROJECT_NAME=myapp       # Project identifier
-
-# Optional Settings
-FLASK_ENV=development    # development/production
-FLASK_DEBUG=1           # Enable/disable debug mode
 ```
 
 #### `vite.config.js`
