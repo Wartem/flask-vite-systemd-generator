@@ -24,7 +24,7 @@ handle_error() {
 
 trap 'handle_error ${LINENO} $?' ERR
 
-echo "=== SystemD-Auto-Flask-Vite Project Generator ==="
+echo "=== Flask-Vite-Systemd-Generator ==="
 echo "Log file: $LOG_FILE"
 
 # Get script directory with error handling
