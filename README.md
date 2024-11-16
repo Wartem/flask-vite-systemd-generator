@@ -320,7 +320,7 @@ WantedBy=multi-user.target
 
 - Automatic restart on failure
 
-Remove the commented out lines to add resource limits:
+Uncomment the lines above to add resource limits:
 - CPU usage capped at 50%
 - Memory limited to 256MB
 - Process priority set to nice 10
