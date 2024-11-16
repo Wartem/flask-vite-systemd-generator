@@ -11,7 +11,7 @@
 ![Error Handling](https://img.shields.io/badge/Error_Handling-Normal-yellow)
 ![Logs](https://img.shields.io/badge/Logging-Automated-blue)
 
-# Flask-React-SystemD Project Generator
+# Flask-Vite-Systemd-Generator 
 
 A project generator and management system that creates a Flask backend with React frontend, complete with SystemD service integration. This tool automates the entire setup process from development to production deployment.
 
@@ -143,7 +143,7 @@ This project aims to simplify the process of setting up a Flask-React applicatio
 
 1. **Download the Generator**
    ```bash
-   curl -O https://raw.githubusercontent.com/Wartem/systemd_auto_flask_vite/main/flask-vite-systemd-generator.sh
+   curl -O https://raw.githubusercontent.com/Wartem/flask-vite-systemd-generator/main/flask-vite-systemd-generator.sh
    chmod +x flask-vite-systemd-generator.sh
 
 2. **Run the Generator**
@@ -158,8 +158,8 @@ Or alternatively:
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/Wartem/systemd_auto_flask_vite.git
-   cd systemd_auto_flask_vite
+   git clone https://github.com/Wartem/flask-vite-systemd-generator.git
+   cd flask-vite-systemd-generator
    ./flask-vite-systemd-generator.sh
 ```
 
