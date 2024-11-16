@@ -8,22 +8,22 @@
 ![Services](https://img.shields.io/badge/Services-Automated-green)
 ![Hot Reload](https://img.shields.io/badge/Hot_Reload-Enabled-ff69b4)
 ![Proxy](https://img.shields.io/badge/Proxy-Configured-orange)
-![Error Handling](https://img.shields.io/badge/Error_Handling-Advanced-red)
+![Error Handling](https://img.shields.io/badge/Error_Handling-Normal-yellow)
 ![Logs](https://img.shields.io/badge/Logging-Automated-blue)
 
 # Flask-React-SystemD Project Generator
 
-A project generator and management system that creates a production-ready Flask backend with React frontend, complete with SystemD service integration. This tool automates the entire setup process from development to production deployment.
+A project generator and management system that creates a Flask backend with React frontend, complete with SystemD service integration. This tool automates the entire setup process from development to production deployment.
 
 ## Overview
 
 This project generator creates a complete full-stack application environment with:
 
-- **Flask Backend**: A Python Flask server with CORS support and production-ready configuration
+- **Flask Backend**: A Python Flask server with CORS support.
 - **React Frontend**: A Vite-powered React application with development server and production build setup
 - **SystemD Integration**: Automatic service creation and management for production deployment
 - **Development Tools**: Hot-reloading development servers for both frontend and backend
-- **Service Management**: A comprehensive service manager for controlling the application in production
+- **Service Management**: A service manager for controlling the application in production
 
 ### Key Features
 
@@ -32,9 +32,8 @@ This project generator creates a complete full-stack application environment wit
 - SystemD service integration
 - Built-in error handling and logging
 - Proxy configuration for development
-- Production-ready build system
 - Service monitoring and management tools
-- Comprehensive logging system
+- Logging system
 
 ### Project Structure
 
@@ -53,6 +52,25 @@ your-project/
 │   └── package.json   # Node.js dependencies
 └── README.md          # Project documentation
 ```
+
+## Built With
+
+This project integrates several excellent open-source tools and frameworks:
+
+### Core Frameworks
+- [Flask](https://flask.palletsprojects.com/) - Lightweight WSGI web application framework by Pallets
+- [React](https://reactjs.org/) - JavaScript library for building user interfaces by Meta
+- [Vite](https://vitejs.dev/) - Next generation frontend tooling by Evan You
+
+### Development Tools
+- [python-dotenv](https://github.com/theskumar/python-dotenv) - Environment variable management
+- [flask-cors](https://flask-cors.readthedocs.io/) - CORS handling for Flask
+- [SystemD](https://systemd.io/) - System and service manager for Linux
+
+### Acknowledgments
+This project is built upon these powerful tools, serving as a simple integration layer to help developers quickly set up a development environment. All credit for the core functionality goes to the original framework creators and maintainers.
+
+The scripts in this project mainly focus on automating the setup and configuration process, while the actual heavy lifting is done by these well-established frameworks.
 
 ## Why This Project?
 
@@ -243,7 +261,7 @@ The Vite development server is configured to proxy API requests:
 
 ### Service Installation
 
-The project includes a complete SystemD service management system. To deploy to production:
+The project includes basic SystemD service management scripts:
 
 1. **Build the Frontend**
    ```bash
@@ -265,7 +283,7 @@ The project includes a complete SystemD service management system. To deploy to 
 
 ### Service Configuration
 
-The SystemD service is configured with production-ready settings:
+The SystemD service is configured with these settings:
 
 ```ini
 [Unit]
@@ -468,7 +486,7 @@ python-dotenv
 
 ### Error Handling
 
-The scripts include comprehensive error handling:
+The scripts include error handling:
 
 #### Log Files
 - Main setup log: `/tmp/flask_react_setup.log`
