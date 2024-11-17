@@ -13,7 +13,7 @@
 
 # Flask-Vite-Systemd-Generator 
 
-A project generator and management system that creates a Flask backend with React frontend (powered by Vite), complete with systemd service integration. Designed for Linux environments and lightweight enough to run smoothly on Raspberry Pi, this tool automates the setup process from development to basic system service deployment.
+A project generator and management system that creates a Flask backend with React frontend (powered by Vite), complete with systemd service integration. Designed for Linux environments and lightweight enough to run smoothly on Raspberry Pi, this tool automates the setup process from development to system service deployment.
 
 ## Overview
 
@@ -78,15 +78,15 @@ This project aims to simplify the process of setting up a Flask-React applicatio
 
 ### 🎯 What This Tool Helps With
 
-1. **Basic Service Integration**
+1. **Service Integration**
    - Automates the creation of SystemD service files
    - Provides a simple interface for common service operations
-   - Sets up basic logging and error handling
+   - Sets up logging and error handling
    - Includes reasonable default resource limits
 
 2. **Development Setup**
    - Combines Flask and React setup in one step
-   - Configures basic proxy settings for development
+   - Configures proxy settings for development
    - Sets up a development environment with hot reloading
    - Manages environment variables
 
@@ -112,7 +112,7 @@ This project aims to simplify the process of setting up a Flask-React applicatio
 
 ### 📋 Limitations
 
-- Basic default configurations that may need customization
+- Default configurations that may need customization
 - Limited error handling capabilities
 - May not suit complex deployment requirements
 - Should be reviewed and adjusted for specific security needs
